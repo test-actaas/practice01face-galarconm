@@ -1,25 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-int main()
-{
-    int x1, y1, x2, y2;
-    double geometrical_distance;
+int main(int argc, char *argv[]) {
+    if (argc != 4) {
+        printf("Usage: %s <name> <int_value> <float_value>\n", argv[0]);
+        return 1;
+    }
 
-    printf("Point A:\n");
-    printf("Enter the value of the x1 coordinate: ");
-    scanf("%d", &x1);
-    printf("Enter the value of the y1 coordinate: ");
-    scanf("%d", &y1);
-    printf("Point B:\n");
-    printf("Enter the value of the x2 coordinate: ");
-    scanf("%d", &x2);
-    printf("Enter the value of the y2 coordinate: ");
-    scanf("%d", &y2);
+    char *name = argv[1];
+    int int_value = atoi(argv[2]);
+    double float_value = atof(argv[3]);
 
-    geometrical_distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-
-    printf("\nThe geometric distance between A and B is %.1f\n", geometrical_distance);
+    printf("Name: %s\n", name);
+    printf("Integer value: %d\n", int_value);
+    printf("Float value: %.1f\n", float_value);
 
     return 0;
 }
