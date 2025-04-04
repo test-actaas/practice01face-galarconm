@@ -10,7 +10,7 @@ int main() {
     scanf("%f", &weight);
 
     printf("Myss name is %s and I am %d years old. My weight is %.6f kg.\n", name, age, weight);
-
+    //Comentario
     return 0;
     
 }
