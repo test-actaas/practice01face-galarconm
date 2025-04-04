@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &age);
     scanf("%f", &weight);
 
-    printf("Msy name is %s and I am %d years old. My weight is %.6f kg.\n", name, age, weight);
+    printf("My name is %s and I am %d years old. My weight is %.6f kg.\n", name, age, weight);
 
     return 0;
     
